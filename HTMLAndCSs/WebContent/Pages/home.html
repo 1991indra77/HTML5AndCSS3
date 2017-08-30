@@ -3,6 +3,7 @@
 <head lang="en">
 <meta charset="utf-8">
 <title>HTML5 and CSS3 Fundamentals</title>
+<link rel="stylesheet" type="text/css" href="./css/style.css" media="screen">
 </head>
 <body>
 	<header>
@@ -12,22 +13,90 @@
 		</hgroup>
 		<nav>
 			<ul>
-				<li>Home</li>
-				<li>About</li>
-				<li>Contact</li>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
 			</ul>
 		</nav>
 	</header>
 	<section>
 		<article>
-			This is First Article
+			<h1>Background Every Web Developer should know</h1>
+			<h2>Introduction</h2>
+
+			<p>In this article I'll describe the World Wide Web from a high
+				level perspective, focusing on how a web page is requested and
+				delivered from a web server to a web browser.</p>
+
+			<h2>A Brief Technical Overview of the World Wide Web</h2>
+
+			<p>The World Wide Web started out as a means for sharing
+				scientific resources like research documentation between
+				governmental and academic institutions.</p>
+
+			<figure>
+				<img src="./image/http-message.PNG"
+					alt="This is a HTTP message image">
+				<figcaption>Figure 1. The HTTP request and response
+					message contains important information that allows communication
+					back and forth between client and server.</figcaption>
+
+			</figure>
+
+			<p>From technical perspective, the World Wide Web comprised of
+				several technologies...</p>
+			<figure>
+				<img src="./image/www-diagram.PNG" alt="World Wide Web diagram">
+				<figcaption>Figure 2. (1) The HTTP Request is (2)
+					routed across the Internet to the (3) server which serves the (4)
+					requested file back in the body of an HTTP message.</figcaption>
+			</figure>
+			<p>Once the requested document is delivered through the network
+				back to requestor, that document is loaded into the web Browser.</p>
+
+			<h3>What are the domain names?</h3>
+
+			<p>
+				The request that users type into the web browsers orginnally looked
+				something like this <br>
+				<br>http://157.123.23.44/index.html
+			</p>
+
+			<p>Why the series of numbers? Each computer on this network
+				assign an addres, called an Internet protocol address or IP address.
+				This is assigned by a lower level protocol called Transmission
+				Control Protocol or TCP.</p>
+
+			<ol>
+				<li>Items need to remember</li>
+				<li>New Items</li>
+				<li>Old Items</li>
+			</ol>
 		</article>
+		<hr>
 		<article>
-			This is Second Article
+			<h1>How web browser parse HTML?</h1>
+			<p>There are four major parsing engines that are famous today</p>
+			<ol>
+				<li>Trident</li>
+				<li>KDEs</li>
+				<li>Gecko</li>
+				<li>Pestro engine</li>
+			</ol>
+			<h2>HTML Encoding</h2>
+			<p>To show tags like &lt;html&gt;, we need to user HTML encoding
+				&lt and &gt. There are several html encodings.</p>
 		</article>
 	</section>
 	<footer>
-		This is footer Text
+		<small>Copyright &copy; 2017 Indranil Chowdhury</small>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
 	</footer>
 </body>
 </html>
